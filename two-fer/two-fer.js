@@ -3,8 +3,6 @@
 // convenience to get you started writing code faster.
 //
 
-export const twoFer = (str) => {
-  return str === undefined
-    ? 'One for you, one for me.'
-    : `One for ${str}, one for me.`
+export const twoFer = (str = 'you') => {
+  return `One for ${str}, one for me.`
 }
